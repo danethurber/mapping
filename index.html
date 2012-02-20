@@ -5,13 +5,46 @@
     <title>Backbone Mapping</title>
 
     <script data-main="js/main" src="js/libs/require/require.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style type="text/css">
-    #map { height: 400px; width: 800px; }
+        body { padding-bottom: 40px; }
+        #map { min-height: 500px; }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="map"></div>
+
+    <div class="navbar">
+        <div class="navbar-inner"><div class="container">
+
+            <a class="brand" href="#">Backbone Mapping</a>
+            <div class="nav-collapse">
+                <p class="navbar-text pull-right">Find Me on Twitter <a href="http://twitter.com/danethurber">@danethurber</a></p>
+            </div><!--/.nav-collapse -->
+        </div></div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list" id="map-controls"></ul>
+                </div><!--/.well -->
+            </div><!--/span-->
+            <div class="span9">
+
+                <div id="map"></div>
+
+            </div><!--/span-->
+        </div><!--/row-->
+
+        <hr>
+
+        <footer>
+            <p>&copy;2012</p>
+        </footer>
+
+    </div><!--/.container-->
+
 </body>
 </html>

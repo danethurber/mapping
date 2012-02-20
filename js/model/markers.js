@@ -5,6 +5,9 @@ define(['backbone'], function(Backbone){
             latitude : null,
             longitude : null,
             title : null
+        },
+        initialize: function() {
+            this.cid = this.id;
         }
     });
 
