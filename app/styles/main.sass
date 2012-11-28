@@ -1,0 +1,23 @@
+@import 'bootstrap.css'
+
+// VARIABLES
+// --------------------
+$border-radius: 4px
+$border-color: #DDD
+
+// MIXINS
+// --------------------
+@mixin border-radius($radius: $border-radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+// LAYOUT
+// --------------------
+.navbar
+  margin:
+    bottom: 36px
+.map
+  height: 500px
+  border: 1px solid $border-color
+  +border-radius
