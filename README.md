@@ -1,3 +1,3 @@
-# Backbone Mapping
+Code For Google Maps
 
-quick and simple googlemaps with backbone
+use `yeoman server` to get it running
