@@ -18,13 +18,34 @@
     <div class="container">
         <div class="row">
             <div class="span3">
-                <ul class="nav nav-tabs nav-stacked">
-                    <li><a href="">a</a></li>
-                    <li><a href="">b</a></li>
-                    <li><a href="">c</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">e</a></li>
-                </ul>
+                <form id="form-geocode">
+                    <div class="input-append">
+                        <input type="text" class="input-medium" placeholder="Enter Your Location">
+                        <button class="btn" type="submit"><i class="icon-map-marker"></i></button>
+                    </div>
+                </form>
+
+                <hr>
+
+                <button class="btn btn-block" type="submit"><i class="icon-eye-open"></i> Ask For My Location</button>
+
+                <hr>
+
+                <div class="well" style="padding: 8px 0;">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Actions</li>
+                        <li><a href="">Reset Pins</a></li>
+                        <li><a href="">Clear Pins</a></li>
+
+                        <li class="nav-header">Add Pins</li>
+                        <li><a href="">Salt Lake City</a></li>
+                        <li><a href="">Seattle</a></li>
+                        <li><a href="">San Francisco</a></li>
+                        <li><a href="">New York</a></li>
+                        <li><a href="">Boston</a></li>
+                        <li><a href="">Miami</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="span9">
                 <div class="map" id="map"></div>
@@ -33,6 +54,15 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script>
+    <script src="//maps.google.com/maps/api/js?sensor=false"></script>
+
+    <script src="scripts/vendor/underscore.js"></script>
+    <script src="scripts/vendor/backbone.js"></script>
+    <script src="scripts/models/location.js"></script>
+    <script src="scripts/collections/locations.js"></script>
+    <script src="scripts/views/map.js"></script>
+    <script src="scripts/application.js"></script>
+    <script src="scripts/main.js"></script>
+
 </body>
 </html>
